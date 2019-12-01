@@ -16,5 +16,17 @@ namespace Day01.Tests
             // Assert
             Assert.That(result, Is.EqualTo(correctSum));
         }
+        
+        [TestCase(14, 2)]
+        [TestCase(1969, 966)]
+        [TestCase(100756, 50346)]
+        public void SumUsingDoubleChecker_Test(int mass, int correctSum)
+        {
+            // Arrange + act
+            var result = FuelCounterUpper.SumUsingDoubleChecker(new[] { mass });
+            
+            // Assert
+            Assert.That(result, Is.EqualTo(correctSum));
+        }
     }
 }

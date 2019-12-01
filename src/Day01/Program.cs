@@ -15,8 +15,9 @@ namespace Day01
             var input = File.ReadAllText("input.txt");
             var testInput = TestInputConverter.Parse(input);
             var requiredFuel = FuelCounterUpper.Sum(testInput);
+            var requiredFuelUsingCheck = FuelCounterUpper.SumUsingDoubleChecker(testInput);
             
-            Console.WriteLine($"What is the sum of the fuel requirements for all of the modules on your spacecraft? It is {requiredFuel}");
+            Console.WriteLine($"What is the sum of the fuel requirements for all of the modules on your spacecraft? It is {requiredFuel} and {requiredFuelUsingCheck} using Rocket Equation Double-Checker");
         }
     }
 }
