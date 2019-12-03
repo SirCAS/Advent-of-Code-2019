@@ -16,8 +16,10 @@ namespace Day03
             var coordinates = RoutingGenerator.GetCoordinates(paths);
             
             var shortestDistance = IntersectionCalculator.GetClosetsDistance(coordinates);
+            var fewestSteps = IntersectionCalculator.GetFewestSteps(coordinates);
             
             Console.WriteLine($"Part1: {shortestDistance}");
+            Console.WriteLine($"Part2: {fewestSteps}");
         }
     }
 }
