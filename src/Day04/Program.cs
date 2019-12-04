@@ -13,12 +13,23 @@ namespace Day04
 
             const string puzzleInput = "137683-596253";
 
-            var validPasswords = PasswordGenerator
-                .FromInterval(puzzleInput)
-                .Where(PasswordValidator.NeverDecreases)
-                .Where(PasswordValidator.HasDouble);
+            var unvalidatedPasswords = PasswordGenerator.FromInterval(puzzleInput); 
             
-            Console.WriteLine($"Part1: {validPasswords.Count()}");
+            var validPasswordsForPart1 = 
+                unvalidatedPasswords
+                    .Where(PasswordValidator.NeverDecreases)
+                    .Where(PasswordValidator.HasDouble)
+                    .Count();
+            
+            Console.WriteLine($"Part1: {validPasswordsForPart1}");
+            
+            var validPasswordsForPart2 = 
+                unvalidatedPasswords
+                    .Where(PasswordValidator.NeverDecreases)
+                    .Where(PasswordValidator.HasDoubleWhichIsNotTriple)
+                    .Count();
+            
+            Console.WriteLine($"Part2: {validPasswordsForPart2}");
         }
     }
 }
