@@ -5,7 +5,7 @@
 ### What is this?
 Advent of Code is a series of christmas themed programming puzzles by Eric Wastl.
 
-This repository contains the solutions for [Advent of Code 2019](http://adventofcode.com/2018) that I've come up with.
+This repository contains the solutions for [Advent of Code 2019](http://adventofcode.com/2019) that I've come up with.
 
 
 ### How to run
