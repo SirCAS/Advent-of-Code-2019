@@ -1,6 +1,6 @@
 # Advent of Code 2019
 
-![](https://github.com/SirCAS/Advent-of-Code-2019/workflows/Tests/badge.svg)
+[![](https://github.com/SirCAS/Advent-of-Code-2019/workflows/Tests/badge.svg)](#)
 
 ### What is this?
 Advent of Code is a series of christmas themed programming puzzles by Eric Wastl.
